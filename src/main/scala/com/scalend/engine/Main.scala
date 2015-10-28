@@ -20,7 +20,8 @@ object Main extends App{
     val sc = new SparkContext( conf )
 
 //    val data = sc.textFile("data/mllib/als/test.data")
-    val data = sc.textFile("/Users/shailesh.gupta/Downloads/sample_data.json")
+//    val data = sc.textFile("user_views.json")
+    val data = sc.textFile("sample_data.json")
 
     val ratings = data.flatMap( y => {
         val mapped = convertJsonToClass[input](y.mkString)

@@ -6,7 +6,7 @@ scalaVersion := "2.11.7"
 
 
 resolvers := Seq(
-    "lift-json" at "net.liftweb"
+//    "lift-json" at "net.liftweb"
 )
 
 libraryDependencies ++= Seq(
